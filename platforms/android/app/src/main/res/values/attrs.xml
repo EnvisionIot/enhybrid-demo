@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <declare-styleable name="SlidingLayout">
+        <attr format="dimension" name="rightPadding" />
+    </declare-styleable>
+    <declare-styleable name="EnvIconView">
+        <attr format="string" name="iconttf" />
+    </declare-styleable>
+    <attr format="reference" name="envNaviBgColor" />
+    <attr format="reference" name="envNaviIconColor" />
+    <attr format="reference" name="envNaviIconSize" />
+    <attr format="reference" name="envNaviTitleTextColor" />
+    <attr format="reference" name="envNaviTitleTextSize" />
+    <attr format="string" name="envFontIconPath" />
+</resources>

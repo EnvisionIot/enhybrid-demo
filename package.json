@@ -1,0 +1,61 @@
+{
+  "name": "com.envision.demo",
+  "displayName": "hybrid-demo",
+  "version": "1.0.0",
+  "description": "这是一个能够创建手机端混合应用的模版。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "envhybrid-template",
+    "cordova:template"
+  ],
+  "author": "zhenghui.yu",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@enos/mobile-plugin-envcontext": "0.0.4",
+    "@enos/mobile-plugin-fingerprint": "0.0.15",
+    "@enos/mobile-plugin-hybrid-init": "0.0.10",
+    "@enos/mobile-plugin-hybrid-lib": "0.0.4",
+    "@enos/mobile-plugin-language": "0.0.9",
+    "@enos/mobile-plugin-log": "0.0.4",
+    "@enos/mobile-plugin-navigation-bar": "0.0.5",
+    "@enos/mobile-plugin-project-init": "file:preset_plugins/mobile-plugin-project-init",
+    "@enos/mobile-plugin-shared-data": "0.0.7",
+    "@enos/mobile-plugin-shellrouter": "0.0.6",
+    "@enos/mobile-plugin-skin": "0.0.13",
+    "@enos/mobile-plugin-web-container": "0.0.33",
+    "cordova-android": "^8.0.0",
+    "cordova-ios": "^5.0.1"
+  },
+  "devDependencies": {
+    "cordova-plugin-whitelist": "^1.3.3",
+    "mobile-plugin-project-init": "./preset_plugins/mobile-plugin-project-init"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "mobile-plugin-project-init": {},
+      "@enos/mobile-plugin-hybrid-lib": {},
+      "@enos/mobile-plugin-hybrid-init": {},
+      "@enos/mobile-plugin-shared-data": {},
+      "@enos/mobile-plugin-navigation-bar": {},
+      "@enos/mobile-plugin-log": {},
+      "@enos/mobile-plugin-shellrouter": {},
+      "@enos/mobile-plugin-envcontext": {},
+      "@enos/mobile-plugin-web-container": {},
+      "mobile-plugin-hybrid-lib": {},
+      "mobile-plugin-hybrid-init": {},
+      "mobile-plugin-shared-data": {},
+      "mobile-plugin-navigation-bar": {},
+      "mobile-plugin-log": {},
+      "mobile-plugin-shellrouter": {},
+      "mobile-plugin-envcontext": {},
+      "mobile-plugin-web-container": {}
+    },
+    "platforms": [
+      "ios"
+    ]
+  }
+}

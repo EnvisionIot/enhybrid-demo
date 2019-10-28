@@ -1,0 +1,102 @@
+@import "envicons.less";
+@import "envcolors.less";
+
+@defaultColor:                      #bfbfbf;
+@itemBg:                         rgba(0, 0, 0, 0.3);
+@transBg:                        rgba(0, 0, 0, 0);
+@lineBg:                         rgba(255, 255, 255, 0.3);
+@minTapableSize:                 44px;
+@iOSNavigationBarHeight:         64px;
+@AndroidNavigationBarHeight:     44px;
+@iOSStatusBarHeight:             20px;
+@FooterTabHeight:                50px;
+@listRowHeight:                  50px;
+@app-bg:                         #ffffff; // -webkit-linear-gradient(left, #2D4560 0%, #124D47 100%);
+@content-bg:                     rgb(246, 246, 247);
+
+@device-width:                   375px;
+@device-height:                  667px;
+
+@silhouette-chrome-vertical:     40px;
+@silhouette-chrome-horizontal:   10px;
+@silhouette-width:               @device-width + (@silhouette-chrome-horizontal * 2);
+@silhouette-height:              @device-height + (@silhouette-chrome-vertical * 2);
+@font-family-sans-serif:         "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:              "Times New Roman", Times, Georgia, serif;
+@font-family-monospace:          Courier, monospace;
+@font-family-base:               @font-family-sans-serif;
+@font-weight-bold:               500;
+
+@view-transition-timing-function: cubic-bezier(.36, .66, .04, 1);
+
+html {
+  font-family: @font-family-base; // 1
+  font-size: 16px;
+  -ms-text-size-adjust: 100%; // 2
+  -webkit-text-size-adjust: 100%; // 2
+}
+
+body {
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: none;
+  -webkit-user-select: none;
+  margin: 0;
+  color: @defaultColor
+}
+
+#app{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+// 去除iOS UIWebView中 元素点击之后灰色的高亮
+.clickable{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.app-wrapper,
+.device-silhouette {
+  height: 100%;
+  width: 100%;
+}
+
+// mobile webview
+@media only screen and (min-width : 320px) and (max-width: 700px){
+  #app{
+    background: @app-bg;
+  }
+}
+
+// desktop wrapper
+@media only screen and (min-width : 700px) {
+  #app{
+    background:  fade(black, 10%);
+
+    // center the app inside the viewport
+    .app-wrapper {
+      width: @device-width;
+      height: @device-height;
+      background: @app-bg;
+      left: 50%;
+      margin-left: -(@device-width / 2);
+      margin-top: -(@device-height / 2);
+      overflow: visible;
+      position: absolute;
+      top: 50%;
+    }
+
+    // nice for demonstrating on desktop
+    .device-silhouette {
+      width: @silhouette-width;
+      height: @silhouette-height;
+      box-sizing: border-box;
+      background-color: fade(black, 30%);
+      margin: -@silhouette-chrome-vertical -@silhouette-chrome-horizontal;
+      padding: @silhouette-chrome-vertical @silhouette-chrome-horizontal;
+    }
+  }
+}

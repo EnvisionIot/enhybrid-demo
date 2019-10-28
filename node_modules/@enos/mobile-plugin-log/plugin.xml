@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plugin xmlns="http://phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="mobile-plugin-log"
+    version="0.0.4">
+  <engines>
+    <engine name="cordova" version=">=3.3.0" />
+  </engines>
+
+  <name>mobile-plugin-log</name>
+  <description>为移动端混合框架提供了打印日志的功能。</description>
+    <js-module src="www/LoggingPlugin.js" name="LoggingPlugin">
+      <clobbers target="window.plugins.LoggingPlugin" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="LoggingPlugin">
+                <param name="android-package" value="com.envisioncn.cordova.log.LoggingPlugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/com/envisioncn/cordova/log/LoggingPlugin.java" target-dir="src/com/envisioncn/cordova/log" />
+
+     </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+       <config-file target="config.xml" parent="/*">
+           <feature name="LoggingPlugin">
+              <param name="ios-package" value="LoggingPlugin" />
+           </feature>
+       </config-file>
+
+       <header-file src="src/ios/LoggingPlugin.h" />
+       <source-file src="src/ios/LoggingPlugin.m" />
+
+    </platform>
+
+</plugin>

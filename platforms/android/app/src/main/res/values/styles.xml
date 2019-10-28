@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <style name="EnvWebContainerDefaultStyle.Style">
+        <item name="envFontIconPath">@string/env_font_icon_path</item>
+        <item name="envNaviBgColor">@color/blue_navi_bg_color</item>
+    </style>
+    <style name="AppTheme" parent="EnvWebContainerDefaultStyle">
+        <item name="android:windowBackground">@color/page_background</item>
+        <item name="colorAccent">@color/white_navi_bg_color</item>
+        <item name="colorPrimary">@color/blue_navi_bg_color</item>
+        <item name="colorPrimaryDark">@color/white_navi_bg_color</item>
+        <item name="android:textColor">@color/normal_text</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorHint">@color/hint_text</item>
+        <item name="android:textSize">15sp</item>
+        <item name="envNaviBgColor">@color/white_navi_bg_color</item>
+        <item name="envNaviIconColor">@color/white_navi_icon_color</item>
+        <item name="envNaviTitleTextColor">@color/white_navi_text_color</item>
+    </style>
+    <style name="AppTheme.translucent">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="SettingsActionItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="AppTheme.translucent.blue">
+        <item name="envNaviBgColor">@color/blue_navi_bg_color</item>
+        <item name="envNaviIconColor">@color/blue_navi_icon_color</item>
+        <item name="envNaviTitleTextColor">@color/blue_navi_text_color</item>
+    </style>
+    <style name="AppTheme.translucent.white">
+        <item name="envNaviBgColor">@color/white_navi_bg_color</item>
+        <item name="envNaviIconColor">@color/white_navi_icon_color</item>
+        <item name="envNaviTitleTextColor">@color/white_navi_text_color</item>
+    </style>
+    <style name="AppTheme.translucent.white.menus">
+        <item name="android:windowAnimationStyle">@style/ActivityAnim</item>
+    </style>
+    <style name="ActivityAnim" parent="@android:style/Animation.Translucent">
+        <item name="android:activityOpenEnterAnimation">@anim/open_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/open_exit</item>
+        <item name="android:activityCloseExitAnimation">@anim/close_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/close_in</item>
+        <item name="android:windowEnterAnimation">@anim/open_in</item>
+        <item name="android:windowExitAnimation">@anim/close_out</item>
+    </style>
+    <style name="EnvWebContainerDefaultStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="envNaviBgColor">@color/env_navi_bg_color</item>
+        <item name="envNaviIconSize">@dimen/env_navi_icon_size</item>
+        <item name="envNaviIconColor">@color/env_navi_icon_color</item>
+        <item name="envNaviTitleTextColor">@color/env_navi_title_text_color</item>
+        <item name="envNaviTitleTextSize">@dimen/env_navi_title_text_size</item>
+        <item name="envFontIconPath">@string/env_font_icon_path</item>
+    </style>
+</resources>

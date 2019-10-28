@@ -1,0 +1,50 @@
+{
+  "_from": "@enos/mobile-plugin-shellrouter",
+  "_id": "@enos/mobile-plugin-shellrouter@0.0.6",
+  "_inBundle": false,
+  "_integrity": "sha1-ObyxuvV3c8XWg+5TnlcZgXcPnsM=",
+  "_location": "/@enos/mobile-plugin-shellrouter",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@enos/mobile-plugin-shellrouter",
+    "name": "@enos/mobile-plugin-shellrouter",
+    "escapedName": "@enos%2fmobile-plugin-shellrouter",
+    "scope": "@enos",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://npm.envisioncn.com:7001/@enos/mobile-plugin-shellrouter/download/@enos/mobile-plugin-shellrouter-0.0.6.tgz",
+  "_shasum": "39bcb1baf57773c5d683ee539e571981770f9ec3",
+  "_spec": "@enos/mobile-plugin-shellrouter",
+  "_where": "/Users/syl/Desktop/Hybride/2019-6-25",
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "mobile-plugin-shellrouter",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "提供移动端混合框架应用的界面跳转，替换和回退的功能。",
+  "keywords": [
+    "cordova",
+    "shellrouter",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "Apache 2.0",
+  "name": "@enos/mobile-plugin-shellrouter",
+  "repository": {
+    "type": "git",
+    "url": "http://git.envisioncn.com/FE/mobile-plugin-shellrouter.git"
+  },
+  "version": "0.0.6"
+}

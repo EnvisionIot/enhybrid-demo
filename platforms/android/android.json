@@ -1,0 +1,246 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"SharedDataPlugin\"><param name=\"android-package\" value=\"com.envisioncn.cordova.shareddata.SharedDataPlugin\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"NaviBarPlugin\"><param name=\"android-package\" value=\"com.envisioncn.cordova.naviBar.NaviBarPlugin\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"LoggingPlugin\"><param name=\"android-package\" value=\"com.envisioncn.cordova.log.LoggingPlugin\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"ShellRouterPlugin\"><param name=\"android-package\" value=\"com.envisioncn.cordova.router.ShellRouterPlugin\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"EnvContext\"><param name=\"android-package\" value=\"com.envisioncn.cordova.context.EnvContextPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "app/src/main/res/values/attrs.xml": {
+        "parents": {
+          "/resources": [
+            {
+              "xml": "<declare-styleable name=\"EnvIconView\"><attr format=\"string\" name=\"iconttf\" /></declare-styleable>",
+              "count": 1
+            },
+            {
+              "xml": "<attr format=\"reference\" name=\"envNaviBgColor\" />",
+              "count": 1
+            },
+            {
+              "xml": "<attr format=\"reference\" name=\"envNaviIconColor\" />",
+              "count": 1
+            },
+            {
+              "xml": "<attr format=\"reference\" name=\"envNaviIconSize\" />",
+              "count": 1
+            },
+            {
+              "xml": "<attr format=\"reference\" name=\"envNaviTitleTextColor\" />",
+              "count": 1
+            },
+            {
+              "xml": "<attr format=\"reference\" name=\"envNaviTitleTextSize\" />",
+              "count": 1
+            },
+            {
+              "xml": "<attr format=\"string\" name=\"envFontIconPath\" />",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "app/src/main/res/values/colors.xml": {
+        "parents": {
+          "/resources": [
+            {
+              "xml": "<color name=\"env_navi_bg_color\">#282C34</color>",
+              "count": 1
+            },
+            {
+              "xml": "<color name=\"env_navi_title_text_color\">#ffffff</color>",
+              "count": 1
+            },
+            {
+              "xml": "<color name=\"env_navi_icon_color\">#ffffff</color>",
+              "count": 1
+            },
+            {
+              "xml": "<color name=\"env_navi_corner_color\">#FD5D51</color>",
+              "count": 1
+            },
+            {
+              "xml": "<color name=\"env_navi_corner_text_color\">#ffffff</color>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "app/src/main/res/values/dimens.xml": {
+        "parents": {
+          "/resources": [
+            {
+              "xml": "<dimen name=\"env_navi_icon_size\">19sp</dimen>",
+              "count": 1
+            },
+            {
+              "xml": "<dimen name=\"env_navi_title_text_size\">20sp</dimen>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "app/src/main/res/values/strings.xml": {
+        "parents": {
+          "/resources": [
+            {
+              "xml": "<string name=\"env_font_icon_path\" />",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "app/src/main/res/values/styles.xml": {
+        "parents": {
+          "/resources": [
+            {
+              "xml": "<style name=\"EnvWebContainerDefaultStyle\" parent=\"Theme.AppCompat.Light.NoActionBar\"><item name=\"envNaviBgColor\">@color/env_navi_bg_color</item><item name=\"envNaviIconSize\">@dimen/env_navi_icon_size</item><item name=\"envNaviIconColor\">@color/env_navi_icon_color</item><item name=\"envNaviTitleTextColor\">@color/env_navi_title_text_color</item><item name=\"envNaviTitleTextSize\">@dimen/env_navi_title_text_size</item><item name=\"envFontIconPath\">@string/env_font_icon_path</item></style>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "AndroidManifest.xml": {
+        "parents": {
+          "/manifest/application": [
+            {
+              "xml": "<activity android:configChanges=\"orientation|keyboardHidden|keyboard|screenSize|locale\" android:launchMode=\"standard\" android:name=\"com.envisioncn.cordova.webContainer.EnvWebViewActivity\" android:screenOrientation=\"portrait\" android:theme=\"@style/EnvWebContainerDefaultStyle\" />",
+              "count": 1
+            }
+          ],
+          "/manifest/application/meta-data[@android:name='ENV_DEFAULT_CONTAINER']": [
+            {
+              "xml": "<meta-data android:name=\"ENV_DEFAULT_CONTAINER\" android:value=\"com.envisioncn.cordova.webContainer.EnvWebViewActivity\" />",
+              "count": 1,
+              "mode": "overwrite",
+              "plugin": "mobile-plugin-web-container",
+              "oldAttrib": {
+                "android:name": "ENV_DEFAULT_CONTAINER",
+                "android:value": "com.envisioncn.cordova.webContainer.EnvWebViewActivity"
+              }
+            }
+          ],
+          "/manifest": []
+        }
+      },
+      "app/src/main/res/values-en/strings.xml": {
+        "parents": {
+          "/resources": []
+        }
+      },
+      "app/src/main/res/values-zh/strings.xml": {
+        "parents": {
+          "/resources": []
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.envision.demo"
+    },
+    "mobile-plugin-project-init": {
+      "PACKAGE_NAME": "com.envision.demo"
+    },
+    "mobile-plugin-hybrid-lib": {
+      "PACKAGE_NAME": "com.envision.demo"
+    },
+    "mobile-plugin-hybrid-init": {
+      "PACKAGE_NAME": "com.envision.demo"
+    },
+    "mobile-plugin-shared-data": {
+      "PACKAGE_NAME": "com.envision.demo"
+    },
+    "mobile-plugin-navigation-bar": {
+      "PACKAGE_NAME": "com.envision.demo"
+    },
+    "mobile-plugin-log": {
+      "PACKAGE_NAME": "com.envision.demo"
+    },
+    "mobile-plugin-shellrouter": {
+      "PACKAGE_NAME": "com.envision.demo"
+    },
+    "mobile-plugin-envcontext": {
+      "PACKAGE_NAME": "com.envision.demo"
+    },
+    "mobile-plugin-web-container": {
+      "PACKAGE_NAME": "com.envision.demo"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "mobile-plugin-shared-data.SharedDataPlugin",
+      "file": "plugins/mobile-plugin-shared-data/www/SharedDataPlugin.js",
+      "pluginId": "mobile-plugin-shared-data",
+      "clobbers": [
+        "window.plugins.SharedDataPlugin"
+      ]
+    },
+    {
+      "id": "mobile-plugin-navigation-bar.NaviBarPlugin",
+      "file": "plugins/mobile-plugin-navigation-bar/www/NaviBarPlugin.js",
+      "pluginId": "mobile-plugin-navigation-bar",
+      "clobbers": [
+        "window.plugins.NaviBarPlugin"
+      ]
+    },
+    {
+      "id": "mobile-plugin-log.LoggingPlugin",
+      "file": "plugins/mobile-plugin-log/www/LoggingPlugin.js",
+      "pluginId": "mobile-plugin-log",
+      "clobbers": [
+        "window.plugins.LoggingPlugin"
+      ]
+    },
+    {
+      "id": "mobile-plugin-shellrouter.ShellRouterPlugin",
+      "file": "plugins/mobile-plugin-shellrouter/www/ShellRouterPlugin.js",
+      "pluginId": "mobile-plugin-shellrouter",
+      "clobbers": [
+        "window.plugins.ShellRouterPlugin"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-whitelist": "1.3.3",
+    "mobile-plugin-project-init": "1.0.0",
+    "mobile-plugin-hybrid-lib": "0.0.4",
+    "mobile-plugin-hybrid-init": "0.0.10",
+    "mobile-plugin-shared-data": "0.0.7",
+    "mobile-plugin-navigation-bar": "0.0.5",
+    "mobile-plugin-log": "0.0.4",
+    "mobile-plugin-shellrouter": "0.0.6",
+    "mobile-plugin-envcontext": "0.0.4",
+    "mobile-plugin-web-container": "0.0.33"
+  }
+}

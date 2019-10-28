@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <color name="white_navi_bg_color">#FFFFFFFF</color>
+    <color name="white_navi_icon_color">#FF222A42</color>
+    <color name="white_navi_text_color">#FF222A42</color>
+    <color name="blue_navi_bg_color">#FF0084FF</color>
+    <color name="blue_navi_icon_color">#FFFFFFFF</color>
+    <color name="blue_navi_text_color">#FFFFFFFF</color>
+    <color name="page_background">#feffff</color>
+    <color name="page_darker_background">#f2f5f8</color>
+    <color name="primary_text">#29333d</color>
+    <color name="normal_text">#8f99a3</color>
+    <color name="hint_text">#c5ccd5</color>
+    <color name="mask_background">#CC111624</color>
+    <color name="primary_color">#FF0084FF</color>
+    <color name="accent_color">#0062ff</color>
+    <color name="option_color">#4b5660</color>
+    <color name="option_press_color">#800062ff</color>
+    <color name="menu_title_text">#647089</color>
+    <color name="menu_item_text">#aeb9c8</color>
+    <color name="menu_item_select_text">#0062ff</color>
+    <color name="menu_item_divider">#272f43</color>
+    <color name="setting_item_text">#ff101114</color>
+    <color name="setting_hint">#b9c0c8</color>
+    <color name="solar_status_bar_color">#077de1</color>
+    <color name="status_bar_color">#FFFFFF</color>
+    <color name="env_navi_bg_color">#282C34</color>
+    <color name="env_navi_title_text_color">#ffffff</color>
+    <color name="env_navi_icon_color">#ffffff</color>
+    <color name="env_navi_corner_color">#FD5D51</color>
+    <color name="env_navi_corner_text_color">#ffffff</color>
+</resources>

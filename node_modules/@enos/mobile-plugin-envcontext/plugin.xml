@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plugin xmlns="http://phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="mobile-plugin-envcontext"
+    version="0.0.4">
+  <engines>
+    <engine name="cordova" version=">=3.3.0" />
+  </engines>
+
+  <name>mobile-plugin-envcontext</name>
+  <description>为移动端混合框架注入上下文变量(eg. server url) 注入 window.navigator。</description>
+
+  <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="EnvContext">
+                <param name="android-package" value="com.envisioncn.cordova.context.EnvContextPlugin"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/com/envisioncn/cordova/context/EnvContextPlugin.java" target-dir="src/com/envisioncn/cordova/context" />
+     </platform>
+
+  <platform name="ios">
+    <source-file src="src/ios/EnvContextPlugin.m" />
+    <header-file src="src/ios/EnvContextPlugin.h" />
+
+    <config-file target="config.xml" parent="/widget">
+      <feature name="EnvContext">
+        <param name="ios-package" value="EnvContextPlugin"/>
+        <param name="onload" value="true" />
+      </feature>
+    </config-file>
+  </platform>
+</plugin>

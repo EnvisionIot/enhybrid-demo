@@ -1,0 +1,4 @@
+
+---
+# mobile-plugin-project-init
+---

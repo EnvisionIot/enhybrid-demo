@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01A7C38F7CC04561AEEBCB02 /* EnvStyleParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F88F595C58745CCB34A1F03 /* EnvStyleParser.m */; };
+		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		0A6FBA544B26AF77F7C56579 /* libPods-hybrid-demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F34EA75A307AB0D73DDEC117 /* libPods-hybrid-demo.a */; };
+		1680F3DDCA194A8D92B3B9B7 /* UIImage+EnvHybrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E2B247B6AD43919C846A4C /* UIImage+EnvHybrid.m */; };
+		174FE3ACEA2A4D1DBF048188 /* EnvWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D923B18ACC304ED493EBF7FF /* EnvWebViewController.m */; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D464F6C10B34048863EC3D1 /* UIImage+EnvHybrid.h in Sources */ = {isa = PBXBuildFile; fileRef = 7ECA8001D48E4581AB00BDD3 /* UIImage+EnvHybrid.h */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		22B1D6B54A9640D0996A7FDC /* EnvWebViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 3EB376CE2BD54FD6B03C8B9E /* EnvWebViewController.h */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		3C83F7EAF6114AC88C14611F /* EnvWebViewControllerProtocol.h in Sources */ = {isa = PBXBuildFile; fileRef = 745F3E649B9A4C769EA13627 /* EnvWebViewControllerProtocol.h */; };
+		3D1F1E3122C206E000797380 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F1E2E22C206E000797380 /* LoginViewController.m */; };
+		3D1F1E3622C2090F00797380 /* SelectTypeSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F1E3322C2090F00797380 /* SelectTypeSheetCell.m */; };
+		3D1F1E3722C2090F00797380 /* SelectTypeSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F1E3522C2090F00797380 /* SelectTypeSheetView.m */; };
+		3D1F1E3A22C2094000797380 /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F1E3922C2094000797380 /* LoginService.m */; };
+		3D1F1E4C22C209FB00797380 /* PublicDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F1E4B22C209FA00797380 /* PublicDefine.m */; };
+		3D1F1E5522C20AB600797380 /* BaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F1E5422C20AB600797380 /* BaseService.m */; };
+		3D1F1E5922C20B4300797380 /* Persistent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F1E5822C20B4200797380 /* Persistent.m */; };
+		3D1F1E5C22C20B9A00797380 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F1E5B22C20B9A00797380 /* AESCrypt.m */; };
+		3D1F1E5F22C20BC800797380 /* LoadingBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F1E5E22C20BC800797380 /* LoadingBtn.m */; };
+		3D1F1E6422C20C6A00797380 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F1E6022C20C6A00797380 /* NSData+Base64.m */; };
+		3D1F1E6522C20C6A00797380 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F1E6322C20C6A00797380 /* NSData+CommonCrypto.m */; };
+		3D1F1E6822C20C8800797380 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F1E6622C20C8800797380 /* NSString+Base64.m */; };
+		3D1F1E6E22C20D5D00797380 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F1E6C22C20D5D00797380 /* Reachability.m */; };
+		3D1F1E7422C20DFF00797380 /* mapicon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D1F1E7022C20DFE00797380 /* mapicon.ttf */; };
+		3D1F1E7522C20DFF00797380 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D1F1E7222C20DFF00797380 /* logo.png */; };
+		3D1F1E7622C20DFF00797380 /* loginbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D1F1E7322C20DFF00797380 /* loginbg.png */; };
+		3D1F1E7B22C231E800797380 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1F1E7A22C231E800797380 /* Security.framework */; };
+		3D1F1E7E22C317B800797380 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F1E7C22C317B800797380 /* RSAEncryptor.m */; };
+		3D1F1E9A22C4A39D00797380 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F1E9522C4A39D00797380 /* HomeViewController.m */; };
+		3D1F1E9B22C4A39D00797380 /* CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F1E9622C4A39D00797380 /* CoverView.m */; };
+		3D1F1E9C22C4A39D00797380 /* CoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D1F1E9722C4A39D00797380 /* CoverView.xib */; };
+		3D6E6C4B22E0480F0098946A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E6C4D22E0480F0098946A /* Localizable.strings */; };
+		3DA8B20722EF029700749A65 /* ErrorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA8B20522EF029700749A65 /* ErrorViewController.m */; };
+		3DA8B20822EF029700749A65 /* ErrorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DA8B20622EF029700749A65 /* ErrorViewController.xib */; };
+		4E6B88ED6338474C9F20BEF2 /* webapp in Resources */ = {isa = PBXBuildFile; fileRef = C49404A851114A12A33648FF /* webapp */; };
+		535B322A69D34DDDBAC1FED5 /* EnvStyleParser.h in Sources */ = {isa = PBXBuildFile; fileRef = 9CFCF080439C46A9BB4795F3 /* EnvStyleParser.h */; };
+		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
+		6C66C662D64F4858BCC0D7C0 /* EnvAppData.m in Sources */ = {isa = PBXBuildFile; fileRef = DA649D0F660F4AAA92A862D0 /* EnvAppData.m */; };
+		71A1583350FF401CACC132BC /* ShellRouterPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C339A563E7B43ACB12F5369 /* ShellRouterPlugin.m */; };
+		734371E33822482BB0AC480A /* WildcardGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A577C49419D1453A86CE6F04 /* WildcardGestureRecognizer.m */; };
+		756DBA4C5DDB411EAAC193D4 /* LoggingPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D788A1DAAA8E456D82CEE71D /* LoggingPlugin.m */; };
+		7BF0C9E956B44A1D9D40B4DA /* WildcardGestureRecognizer.h in Sources */ = {isa = PBXBuildFile; fileRef = F6E3E8816A2F4217BF550C88 /* WildcardGestureRecognizer.h */; };
+		96E98B8594944EAF89A662FB /* UINavigationController+EnvHybrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 03149242BD424F8C907E50F3 /* UINavigationController+EnvHybrid.m */; };
+		9FAE851B804E44DC882B24F6 /* UIColor+Hex.h in Sources */ = {isa = PBXBuildFile; fileRef = 7793E34ACB4D4A70AFEF6DC5 /* UIColor+Hex.h */; };
+		AB6AE58E15934D7596F98BEE /* SharedDataPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC2841F48E4C50925053BF /* SharedDataPlugin.m */; };
+		AC89914CFA9242D48053AE4D /* EnvIconFont.h in Sources */ = {isa = PBXBuildFile; fileRef = 2A381A9F016644EB94908A10 /* EnvIconFont.h */; };
+		AE99F25B2B4648E9AAD6CFF2 /* EnvDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D94826FB442ECA968547B /* EnvDelegate.m */; };
+		B00D763C4DE540819113B019 /* EnvWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB6B354E20646DB8719831B /* EnvWindow.m */; };
+		B96576ADAECD474FA7E6D339 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = A93122EED9A744CFB49BCA5A /* UIColor+Hex.m */; };
+		BD3C293B4F384384A0760B58 /* NaviBarPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6CE5545C754EFFA44ACE49 /* NaviBarPlugin.m */; };
+		C0DDFA15DB334BE0BD11E5B4 /* style.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46CABB9ED0884CBEB82FBF9F /* style.plist */; };
+		C317D340DBBE4A31B25E729D /* EnvIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D27DAA37BE477BAF1E1295 /* EnvIconFont.m */; };
+		D6ABE84A3DE045EB854EA2BF /* NSDictionary+EnvHybrid.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8522B6707B457786E1B9F6 /* NSDictionary+EnvHybrid.m */; };
+		DED2AA1C63304C8899F29F34 /* EnvContextPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A3BDB0A3A54E5887D3E4A3 /* EnvContextPlugin.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		907D8123214C687600058A10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C0C01EB21E3911D50056E6CB;
+			remoteInfo = Cordova;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "hybrid-demo/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		03149242BD424F8C907E50F3 /* UINavigationController+EnvHybrid.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+EnvHybrid.m"; path = "mobile-plugin-web-container/UINavigationController+EnvHybrid.m"; sourceTree = "<group>"; };
+		1BB6B354E20646DB8719831B /* EnvWindow.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = EnvWindow.m; path = "mobile-plugin-hybrid-init/EnvWindow.m"; sourceTree = "<group>"; };
+		1BFC2841F48E4C50925053BF /* SharedDataPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = SharedDataPlugin.m; path = "mobile-plugin-shared-data/SharedDataPlugin.m"; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* hybrid-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hybrid-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29630A1805A84977A2C8716A /* LoggingPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LoggingPlugin.h; path = "mobile-plugin-log/LoggingPlugin.h"; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29E2B247B6AD43919C846A4C /* UIImage+EnvHybrid.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "UIImage+EnvHybrid.m"; path = "mobile-plugin-web-container/UIImage+EnvHybrid.m"; sourceTree = "<group>"; };
+		2A381A9F016644EB94908A10 /* EnvIconFont.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = EnvIconFont.h; path = "mobile-plugin-web-container/EnvIconFont.h"; sourceTree = "<group>"; };
+		2EBEEB43D3F94428981EFB7D /* NSDictionary+EnvHybrid.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+EnvHybrid.h"; path = "mobile-plugin-shared-data/NSDictionary+EnvHybrid.h"; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
+		32CA4F630368D1EE00C91783 /* hybrid-demo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hybrid-demo-Prefix.pch"; sourceTree = "<group>"; };
+		3D1F1E2E22C206E000797380 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		3D1F1E2F22C206E000797380 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		3D1F1E3222C2090F00797380 /* SelectTypeSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectTypeSheetView.h; sourceTree = "<group>"; };
+		3D1F1E3322C2090F00797380 /* SelectTypeSheetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectTypeSheetCell.m; sourceTree = "<group>"; };
+		3D1F1E3422C2090F00797380 /* SelectTypeSheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectTypeSheetCell.h; sourceTree = "<group>"; };
+		3D1F1E3522C2090F00797380 /* SelectTypeSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectTypeSheetView.m; sourceTree = "<group>"; };
+		3D1F1E3822C2094000797380 /* LoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginService.h; sourceTree = "<group>"; };
+		3D1F1E3922C2094000797380 /* LoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginService.m; sourceTree = "<group>"; };
+		3D1F1E4A22C209FA00797380 /* PublicDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicDefine.h; sourceTree = "<group>"; };
+		3D1F1E4B22C209FA00797380 /* PublicDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicDefine.m; sourceTree = "<group>"; };
+		3D1F1E5222C20A5300797380 /* Strs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Strs.h; sourceTree = "<group>"; };
+		3D1F1E5322C20AB500797380 /* BaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseService.h; sourceTree = "<group>"; };
+		3D1F1E5422C20AB600797380 /* BaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseService.m; sourceTree = "<group>"; };
+		3D1F1E5622C20AF300797380 /* Uris.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Uris.h; sourceTree = "<group>"; };
+		3D1F1E5722C20B4200797380 /* Persistent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Persistent.h; sourceTree = "<group>"; };
+		3D1F1E5822C20B4200797380 /* Persistent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Persistent.m; sourceTree = "<group>"; };
+		3D1F1E5A22C20B9A00797380 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
+		3D1F1E5B22C20B9A00797380 /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
+		3D1F1E5D22C20BC800797380 /* LoadingBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingBtn.h; sourceTree = "<group>"; };
+		3D1F1E5E22C20BC800797380 /* LoadingBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingBtn.m; sourceTree = "<group>"; };
+		3D1F1E6022C20C6A00797380 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		3D1F1E6122C20C6A00797380 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		3D1F1E6222C20C6A00797380 /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		3D1F1E6322C20C6A00797380 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		3D1F1E6622C20C8800797380 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		3D1F1E6722C20C8800797380 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		3D1F1E6C22C20D5D00797380 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3D1F1E6D22C20D5D00797380 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3D1F1E7022C20DFE00797380 /* mapicon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mapicon.ttf; sourceTree = "<group>"; };
+		3D1F1E7222C20DFF00797380 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		3D1F1E7322C20DFF00797380 /* loginbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginbg.png; sourceTree = "<group>"; };
+		3D1F1E7A22C231E800797380 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3D1F1E7C22C317B800797380 /* RSAEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncryptor.m; sourceTree = "<group>"; };
+		3D1F1E7D22C317B800797380 /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptor.h; sourceTree = "<group>"; };
+		3D1F1E9422C4A39D00797380 /* CoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverView.h; sourceTree = "<group>"; };
+		3D1F1E9522C4A39D00797380 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		3D1F1E9622C4A39D00797380 /* CoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverView.m; sourceTree = "<group>"; };
+		3D1F1E9722C4A39D00797380 /* CoverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoverView.xib; sourceTree = "<group>"; };
+		3D1F1E9822C4A39D00797380 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		3D6E6C4C22E0480F0098946A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3D6E6C4E22E0481F0098946A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3DA8B20422EF029700749A65 /* ErrorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorViewController.h; sourceTree = "<group>"; };
+		3DA8B20522EF029700749A65 /* ErrorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ErrorViewController.m; sourceTree = "<group>"; };
+		3DA8B20622EF029700749A65 /* ErrorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorViewController.xib; sourceTree = "<group>"; };
+		3EB376CE2BD54FD6B03C8B9E /* EnvWebViewController.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = EnvWebViewController.h; path = "mobile-plugin-web-container/EnvWebViewController.h"; sourceTree = "<group>"; };
+		3F3D94826FB442ECA968547B /* EnvDelegate.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = EnvDelegate.m; path = "mobile-plugin-hybrid-init/EnvDelegate.m"; sourceTree = "<group>"; };
+		46CABB9ED0884CBEB82FBF9F /* style.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; path = style.plist; sourceTree = "<group>"; };
+		48A2DEC265A04FC882897CB1 /* NaviBarPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = NaviBarPlugin.h; path = "mobile-plugin-navigation-bar/NaviBarPlugin.h"; sourceTree = "<group>"; };
+		5BB8FA9A9E9245848BD35801 /* SharedDataPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = SharedDataPlugin.h; path = "mobile-plugin-shared-data/SharedDataPlugin.h"; sourceTree = "<group>"; };
+		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = "hybrid-demo/CDVLaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		6D6CE5545C754EFFA44ACE49 /* NaviBarPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = NaviBarPlugin.m; path = "mobile-plugin-navigation-bar/NaviBarPlugin.m"; sourceTree = "<group>"; };
+		6E80510EB3C4498F97083822 /* EnvContextPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = EnvContextPlugin.h; path = "mobile-plugin-envcontext/EnvContextPlugin.h"; sourceTree = "<group>"; };
+		745F3E649B9A4C769EA13627 /* EnvWebViewControllerProtocol.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = EnvWebViewControllerProtocol.h; path = "mobile-plugin-web-container/EnvWebViewControllerProtocol.h"; sourceTree = "<group>"; };
+		7793E34ACB4D4A70AFEF6DC5 /* UIColor+Hex.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "mobile-plugin-web-container/UIColor+Hex.h"; sourceTree = "<group>"; };
+		7CC8EA4A5AD24A3B9A28C4F6 /* UINavigationController+EnvHybrid.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+EnvHybrid.h"; path = "mobile-plugin-navigation-bar/UINavigationController+EnvHybrid.h"; sourceTree = "<group>"; };
+		7ECA8001D48E4581AB00BDD3 /* UIImage+EnvHybrid.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "UIImage+EnvHybrid.h"; path = "mobile-plugin-web-container/UIImage+EnvHybrid.h"; sourceTree = "<group>"; };
+		86BC9268A0984D1B8CA5D074 /* EnvAppData.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = EnvAppData.h; path = "mobile-plugin-shared-data/EnvAppData.h"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* hybrid-demo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "hybrid-demo-Info.plist"; path = "hybrid-demo/hybrid-demo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		9C339A563E7B43ACB12F5369 /* ShellRouterPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ShellRouterPlugin.m; path = "mobile-plugin-shellrouter/ShellRouterPlugin.m"; sourceTree = "<group>"; };
+		9CFCF080439C46A9BB4795F3 /* EnvStyleParser.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = EnvStyleParser.h; path = "mobile-plugin-web-container/EnvStyleParser.h"; sourceTree = "<group>"; };
+		9F88F595C58745CCB34A1F03 /* EnvStyleParser.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = EnvStyleParser.m; path = "mobile-plugin-web-container/EnvStyleParser.m"; sourceTree = "<group>"; };
+		A577C49419D1453A86CE6F04 /* WildcardGestureRecognizer.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = WildcardGestureRecognizer.m; path = "mobile-plugin-web-container/WildcardGestureRecognizer.m"; sourceTree = "<group>"; };
+		A93122EED9A744CFB49BCA5A /* UIColor+Hex.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Hex.m"; path = "mobile-plugin-web-container/UIColor+Hex.m"; sourceTree = "<group>"; };
+		AAD132B054DC4B9B908A046B /* EnvWindow.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = EnvWindow.h; path = "mobile-plugin-hybrid-init/EnvWindow.h"; sourceTree = "<group>"; };
+		B5527BDA96364BA094E2ABF4 /* EnvDelegate.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = EnvDelegate.h; path = "mobile-plugin-hybrid-init/EnvDelegate.h"; sourceTree = "<group>"; };
+		C49404A851114A12A33648FF /* webapp */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = folder; path = webapp; sourceTree = "<group>"; };
+		D788A1DAAA8E456D82CEE71D /* LoggingPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = LoggingPlugin.m; path = "mobile-plugin-log/LoggingPlugin.m"; sourceTree = "<group>"; };
+		D8D27DAA37BE477BAF1E1295 /* EnvIconFont.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = EnvIconFont.m; path = "mobile-plugin-web-container/EnvIconFont.m"; sourceTree = "<group>"; };
+		D923B18ACC304ED493EBF7FF /* EnvWebViewController.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = EnvWebViewController.m; path = "mobile-plugin-web-container/EnvWebViewController.m"; sourceTree = "<group>"; };
+		DA649D0F660F4AAA92A862D0 /* EnvAppData.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = EnvAppData.m; path = "mobile-plugin-shared-data/EnvAppData.m"; sourceTree = "<group>"; };
+		E1A3BDB0A3A54E5887D3E4A3 /* EnvContextPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = EnvContextPlugin.m; path = "mobile-plugin-envcontext/EnvContextPlugin.m"; sourceTree = "<group>"; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		F34EA75A307AB0D73DDEC117 /* libPods-hybrid-demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hybrid-demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49C5A50B7754A1D9B73F8D7 /* ShellRouterPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = ShellRouterPlugin.h; path = "mobile-plugin-shellrouter/ShellRouterPlugin.h"; sourceTree = "<group>"; };
+		F6E3E8816A2F4217BF550C88 /* WildcardGestureRecognizer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = WildcardGestureRecognizer.h; path = "mobile-plugin-web-container/WildcardGestureRecognizer.h"; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "hybrid-demo/config.xml"; sourceTree = "<group>"; };
+		FE8522B6707B457786E1B9F6 /* NSDictionary+EnvHybrid.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+EnvHybrid.m"; path = "mobile-plugin-shared-data/NSDictionary+EnvHybrid.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D1F1E7B22C231E800797380 /* Security.framework in Frameworks */,
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				0A6FBA544B26AF77F7C56579 /* libPods-hybrid-demo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3D1F1E9322C4A39D00797380 /* home */,
+				3D1F1E4922C209FA00797380 /* utils */,
+				3D1F1E2D22C206E000797380 /* login */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+				3D1F1E5322C20AB500797380 /* BaseService.h */,
+				3D1F1E5422C20AB600797380 /* BaseService.m */,
+			);
+			name = Classes;
+			path = "hybrid-demo/Classes";
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* hybrid-demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				B6E5B8B847ACE18231D57BD0 /* Pods */,
+				C49404A851114A12A33648FF /* webapp */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* hybrid-demo-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
+			);
+			name = "Other Sources";
+			path = "hybrid-demo";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D1F1E6F22C20DFE00797380 /* icon */,
+				3D1F1E7122C20DFF00797380 /* images */,
+				0207DA571B56EA530066E2B4 /* Images.xcassets */,
+				3047A50E1AB8057F00498E2A /* config */,
+				8D1107310486CEB800E47090 /* hybrid-demo-Info.plist */,
+				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+				3D6E6C4D22E0480F0098946A /* Localizable.strings */,
+				46CABB9ED0884CBEB82FBF9F /* style.plist */,
+			);
+			name = Resources;
+			path = "hybrid-demo/Resources";
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D1F1E7A22C231E800797380 /* Security.framework */,
+				F34EA75A307AB0D73DDEC117 /* libPods-hybrid-demo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+				907D8124214C687600058A10 /* Cordova.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3047A50E1AB8057F00498E2A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3047A50F1AB8059700498E2A /* build-debug.xcconfig */,
+				3047A5101AB8059700498E2A /* build-release.xcconfig */,
+				3047A5111AB8059700498E2A /* build.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				E1A3BDB0A3A54E5887D3E4A3 /* EnvContextPlugin.m */,
+				6E80510EB3C4498F97083822 /* EnvContextPlugin.h */,
+				3F3D94826FB442ECA968547B /* EnvDelegate.m */,
+				1BB6B354E20646DB8719831B /* EnvWindow.m */,
+				B5527BDA96364BA094E2ABF4 /* EnvDelegate.h */,
+				AAD132B054DC4B9B908A046B /* EnvWindow.h */,
+				D788A1DAAA8E456D82CEE71D /* LoggingPlugin.m */,
+				29630A1805A84977A2C8716A /* LoggingPlugin.h */,
+				6D6CE5545C754EFFA44ACE49 /* NaviBarPlugin.m */,
+				48A2DEC265A04FC882897CB1 /* NaviBarPlugin.h */,
+				7CC8EA4A5AD24A3B9A28C4F6 /* UINavigationController+EnvHybrid.h */,
+				FE8522B6707B457786E1B9F6 /* NSDictionary+EnvHybrid.m */,
+				5BB8FA9A9E9245848BD35801 /* SharedDataPlugin.h */,
+				1BFC2841F48E4C50925053BF /* SharedDataPlugin.m */,
+				86BC9268A0984D1B8CA5D074 /* EnvAppData.h */,
+				DA649D0F660F4AAA92A862D0 /* EnvAppData.m */,
+				2EBEEB43D3F94428981EFB7D /* NSDictionary+EnvHybrid.h */,
+				9C339A563E7B43ACB12F5369 /* ShellRouterPlugin.m */,
+				F49C5A50B7754A1D9B73F8D7 /* ShellRouterPlugin.h */,
+				2A381A9F016644EB94908A10 /* EnvIconFont.h */,
+				D8D27DAA37BE477BAF1E1295 /* EnvIconFont.m */,
+				9CFCF080439C46A9BB4795F3 /* EnvStyleParser.h */,
+				9F88F595C58745CCB34A1F03 /* EnvStyleParser.m */,
+				3EB376CE2BD54FD6B03C8B9E /* EnvWebViewController.h */,
+				D923B18ACC304ED493EBF7FF /* EnvWebViewController.m */,
+				745F3E649B9A4C769EA13627 /* EnvWebViewControllerProtocol.h */,
+				7793E34ACB4D4A70AFEF6DC5 /* UIColor+Hex.h */,
+				A93122EED9A744CFB49BCA5A /* UIColor+Hex.m */,
+				7ECA8001D48E4581AB00BDD3 /* UIImage+EnvHybrid.h */,
+				29E2B247B6AD43919C846A4C /* UIImage+EnvHybrid.m */,
+				03149242BD424F8C907E50F3 /* UINavigationController+EnvHybrid.m */,
+				F6E3E8816A2F4217BF550C88 /* WildcardGestureRecognizer.h */,
+				A577C49419D1453A86CE6F04 /* WildcardGestureRecognizer.m */,
+			);
+			name = Plugins;
+			path = "hybrid-demo/Plugins";
+			sourceTree = SOURCE_ROOT;
+		};
+		3D1F1E2D22C206E000797380 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				3D1F1E5D22C20BC800797380 /* LoadingBtn.h */,
+				3D1F1E5E22C20BC800797380 /* LoadingBtn.m */,
+				3D1F1E3822C2094000797380 /* LoginService.h */,
+				3D1F1E3922C2094000797380 /* LoginService.m */,
+				3D1F1E3422C2090F00797380 /* SelectTypeSheetCell.h */,
+				3D1F1E3322C2090F00797380 /* SelectTypeSheetCell.m */,
+				3D1F1E3222C2090F00797380 /* SelectTypeSheetView.h */,
+				3D1F1E3522C2090F00797380 /* SelectTypeSheetView.m */,
+				3D1F1E2E22C206E000797380 /* LoginViewController.m */,
+				3D1F1E2F22C206E000797380 /* LoginViewController.h */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		3D1F1E4922C209FA00797380 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				3D1F1E7D22C317B800797380 /* RSAEncryptor.h */,
+				3D1F1E7C22C317B800797380 /* RSAEncryptor.m */,
+				3D1F1E6D22C20D5D00797380 /* Reachability.h */,
+				3D1F1E6C22C20D5D00797380 /* Reachability.m */,
+				3D1F1E6722C20C8800797380 /* NSString+Base64.h */,
+				3D1F1E6622C20C8800797380 /* NSString+Base64.m */,
+				3D1F1E6122C20C6A00797380 /* NSData+Base64.h */,
+				3D1F1E6022C20C6A00797380 /* NSData+Base64.m */,
+				3D1F1E6222C20C6A00797380 /* NSData+CommonCrypto.h */,
+				3D1F1E6322C20C6A00797380 /* NSData+CommonCrypto.m */,
+				3D1F1E5A22C20B9A00797380 /* AESCrypt.h */,
+				3D1F1E5B22C20B9A00797380 /* AESCrypt.m */,
+				3D1F1E5722C20B4200797380 /* Persistent.h */,
+				3D1F1E5822C20B4200797380 /* Persistent.m */,
+				3D1F1E5622C20AF300797380 /* Uris.h */,
+				3D1F1E5222C20A5300797380 /* Strs.h */,
+				3D1F1E4A22C209FA00797380 /* PublicDefine.h */,
+				3D1F1E4B22C209FA00797380 /* PublicDefine.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		3D1F1E6F22C20DFE00797380 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				3D1F1E7022C20DFE00797380 /* mapicon.ttf */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+		3D1F1E7122C20DFF00797380 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				3D1F1E7222C20DFF00797380 /* logo.png */,
+				3D1F1E7322C20DFF00797380 /* loginbg.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		3D1F1E9322C4A39D00797380 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				3D1F1E9822C4A39D00797380 /* HomeViewController.h */,
+				3D1F1E9522C4A39D00797380 /* HomeViewController.m */,
+				3D1F1E9422C4A39D00797380 /* CoverView.h */,
+				3D1F1E9622C4A39D00797380 /* CoverView.m */,
+				3D1F1E9722C4A39D00797380 /* CoverView.xib */,
+				3DA8B20422EF029700749A65 /* ErrorViewController.h */,
+				3DA8B20522EF029700749A65 /* ErrorViewController.m */,
+				3DA8B20622EF029700749A65 /* ErrorViewController.xib */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		B6E5B8B847ACE18231D57BD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* hybrid-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "hybrid-demo" */;
+			buildPhases = (
+				02B003B30C9C923CACCA4333 /* [CP] Check Pods Manifest.lock */,
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			name = "hybrid-demo";
+			productName = "hybrid-demo";
+			productReference = 1D6058910D05DD3D006BFB54 /* hybrid-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 510;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = 79SDCS2HDY;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "hybrid-demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				"zh-Hans",
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* hybrid-demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		907D8124214C687600058A10 /* Cordova.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cordova.framework;
+			remoteRef = 907D8123214C687600058A10 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+				3D1F1E9C22C4A39D00797380 /* CoverView.xib in Resources */,
+				3D6E6C4B22E0480F0098946A /* Localizable.strings in Resources */,
+				3D1F1E7622C20DFF00797380 /* loginbg.png in Resources */,
+				3D1F1E7522C20DFF00797380 /* logo.png in Resources */,
+				3DA8B20822EF029700749A65 /* ErrorViewController.xib in Resources */,
+				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+				4E6B88ED6338474C9F20BEF2 /* webapp in Resources */,
+				3D1F1E7422C20DFF00797380 /* mapicon.ttf in Resources */,
+				C0DDFA15DB334BE0BD11E5B4 /* style.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02B003B30C9C923CACCA4333 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hybrid-demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/hybrid-demo/Scripts/copy-www-build-step.sh\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				3D1F1E3122C206E000797380 /* LoginViewController.m in Sources */,
+				DED2AA1C63304C8899F29F34 /* EnvContextPlugin.m in Sources */,
+				AE99F25B2B4648E9AAD6CFF2 /* EnvDelegate.m in Sources */,
+				3D1F1E3622C2090F00797380 /* SelectTypeSheetCell.m in Sources */,
+				3D1F1E6822C20C8800797380 /* NSString+Base64.m in Sources */,
+				3D1F1E4C22C209FB00797380 /* PublicDefine.m in Sources */,
+				3D1F1E3722C2090F00797380 /* SelectTypeSheetView.m in Sources */,
+				3D1F1E5522C20AB600797380 /* BaseService.m in Sources */,
+				B00D763C4DE540819113B019 /* EnvWindow.m in Sources */,
+				3D1F1E6422C20C6A00797380 /* NSData+Base64.m in Sources */,
+				756DBA4C5DDB411EAAC193D4 /* LoggingPlugin.m in Sources */,
+				BD3C293B4F384384A0760B58 /* NaviBarPlugin.m in Sources */,
+				3D1F1E9B22C4A39D00797380 /* CoverView.m in Sources */,
+				AB6AE58E15934D7596F98BEE /* SharedDataPlugin.m in Sources */,
+				3D1F1E7E22C317B800797380 /* RSAEncryptor.m in Sources */,
+				6C66C662D64F4858BCC0D7C0 /* EnvAppData.m in Sources */,
+				D6ABE84A3DE045EB854EA2BF /* NSDictionary+EnvHybrid.m in Sources */,
+				71A1583350FF401CACC132BC /* ShellRouterPlugin.m in Sources */,
+				3D1F1E5C22C20B9A00797380 /* AESCrypt.m in Sources */,
+				3D1F1E6E22C20D5D00797380 /* Reachability.m in Sources */,
+				3D1F1E5F22C20BC800797380 /* LoadingBtn.m in Sources */,
+				3DA8B20722EF029700749A65 /* ErrorViewController.m in Sources */,
+				3D1F1E9A22C4A39D00797380 /* HomeViewController.m in Sources */,
+				3D1F1E6522C20C6A00797380 /* NSData+CommonCrypto.m in Sources */,
+				3D1F1E3A22C2094000797380 /* LoginService.m in Sources */,
+				3D1F1E5922C20B4300797380 /* Persistent.m in Sources */,
+				AC89914CFA9242D48053AE4D /* EnvIconFont.h in Sources */,
+				C317D340DBBE4A31B25E729D /* EnvIconFont.m in Sources */,
+				535B322A69D34DDDBAC1FED5 /* EnvStyleParser.h in Sources */,
+				01A7C38F7CC04561AEEBCB02 /* EnvStyleParser.m in Sources */,
+				22B1D6B54A9640D0996A7FDC /* EnvWebViewController.h in Sources */,
+				174FE3ACEA2A4D1DBF048188 /* EnvWebViewController.m in Sources */,
+				3C83F7EAF6114AC88C14611F /* EnvWebViewControllerProtocol.h in Sources */,
+				9FAE851B804E44DC882B24F6 /* UIColor+Hex.h in Sources */,
+				B96576ADAECD474FA7E6D339 /* UIColor+Hex.m in Sources */,
+				1D464F6C10B34048863EC3D1 /* UIImage+EnvHybrid.h in Sources */,
+				1680F3DDCA194A8D92B3B9B7 /* UIImage+EnvHybrid.m in Sources */,
+				96E98B8594944EAF89A662FB /* UINavigationController+EnvHybrid.m in Sources */,
+				7BF0C9E956B44A1D9D40B4DA /* WildcardGestureRecognizer.h in Sources */,
+				734371E33822482BB0AC480A /* WildcardGestureRecognizer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D6E6C4D22E0480F0098946A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D6E6C4C22E0480F0098946A /* en */,
+				3D6E6C4E22E0481F0098946A /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 79SDCS2HDY;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hybrid-demo/hybrid-demo-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "hybrid-demo/hybrid-demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.envision.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5101AB8059700498E2A /* build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 79SDCS2HDY;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hybrid-demo/hybrid-demo-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "hybrid-demo/hybrid-demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.envision.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.envision.demo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.envision.demo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "hybrid-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "hybrid-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

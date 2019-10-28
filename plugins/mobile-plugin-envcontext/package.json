@@ -1,0 +1,53 @@
+{
+  "_from": "@enos/mobile-plugin-envcontext",
+  "_id": "@enos/mobile-plugin-envcontext@0.0.4",
+  "_inBundle": false,
+  "_integrity": "sha1-mxf5ws02eJQVewFOavZyYyA3O5c=",
+  "_location": "/@enos/mobile-plugin-envcontext",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@enos/mobile-plugin-envcontext",
+    "name": "@enos/mobile-plugin-envcontext",
+    "escapedName": "@enos%2fmobile-plugin-envcontext",
+    "scope": "@enos",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://npm.envisioncn.com:7001/@enos/mobile-plugin-envcontext/download/@enos/mobile-plugin-envcontext-0.0.4.tgz",
+  "_shasum": "9b17f9c2cd367894157b014e6af6726320373b97",
+  "_spec": "@enos/mobile-plugin-envcontext",
+  "_where": "/Users/syl/Desktop/Hybride/2019-6-25",
+  "author": {
+    "name": "zihan.chen"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "mobile-plugin-envcontext",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "为移动端混合框架注入上下文变量(eg. server url) 注入 window.navigator。",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.3.0"
+    }
+  ],
+  "license": "Apache 2.0",
+  "name": "@enos/mobile-plugin-envcontext",
+  "repository": {
+    "type": "git",
+    "url": "http://git.envisioncn.com/FE/mobile-plugin-envcontext.git"
+  },
+  "version": "0.0.4"
+}

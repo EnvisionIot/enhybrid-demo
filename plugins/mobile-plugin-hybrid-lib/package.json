@@ -1,0 +1,50 @@
+{
+  "_from": "@enos/mobile-plugin-hybrid-lib",
+  "_id": "@enos/mobile-plugin-hybrid-lib@0.0.4",
+  "_inBundle": false,
+  "_integrity": "sha1-C5CXd35SLrSMiZfQ10syN3eEfeY=",
+  "_location": "/@enos/mobile-plugin-hybrid-lib",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@enos/mobile-plugin-hybrid-lib",
+    "name": "@enos/mobile-plugin-hybrid-lib",
+    "escapedName": "@enos%2fmobile-plugin-hybrid-lib",
+    "scope": "@enos",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://npm.envisioncn.com:7001/@enos/mobile-plugin-hybrid-lib/download/@enos/mobile-plugin-hybrid-lib-0.0.4.tgz",
+  "_shasum": "0b9097777e522eb48c8997d0d74b323777847de6",
+  "_spec": "@enos/mobile-plugin-hybrid-lib",
+  "_where": "/Users/syl/Desktop/Hybride/2019-6-25",
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "mobile-plugin-hybrid-lib",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "移动端混合应用核心库。",
+  "keywords": [
+    "cordova",
+    "cordova-android",
+    "cordova-ios",
+    "hybrid"
+  ],
+  "license": "Apache 2.0",
+  "name": "@enos/mobile-plugin-hybrid-lib",
+  "repository": {
+    "type": "git",
+    "url": "http://git.envisioncn.com/FE/mobile-plugin-hybrid-lib.git"
+  },
+  "version": "0.0.4"
+}

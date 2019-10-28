@@ -1,0 +1,58 @@
+{
+  "_from": "@enos/mobile-plugin-hybrid-init",
+  "_id": "@enos/mobile-plugin-hybrid-init@0.0.10",
+  "_inBundle": false,
+  "_integrity": "sha1-veqwBCGWeXN2CKASGqy36gacnRI=",
+  "_location": "/@enos/mobile-plugin-hybrid-init",
+  "_phantomChildren": {
+    "glob": "7.1.4",
+    "interpret": "1.2.0",
+    "rechoir": "0.6.2"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@enos/mobile-plugin-hybrid-init",
+    "name": "@enos/mobile-plugin-hybrid-init",
+    "escapedName": "@enos%2fmobile-plugin-hybrid-init",
+    "scope": "@enos",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://npm.envisioncn.com:7001/@enos/mobile-plugin-hybrid-init/download/@enos/mobile-plugin-hybrid-init-0.0.10.tgz",
+  "_shasum": "bdeab004219679737608a0121aacb7ea069c9d12",
+  "_spec": "@enos/mobile-plugin-hybrid-init",
+  "_where": "/Users/syl/Desktop/Hybride/2019-6-25",
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "mobile-plugin-hybrid-init",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "shelljs": "^0.8.3"
+  },
+  "deprecated": false,
+  "description": "提供移动端混合框架中间项目层所需的必要初始化及配置",
+  "keywords": [
+    "cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "Apache 2.0",
+  "name": "@enos/mobile-plugin-hybrid-init",
+  "repository": {
+    "type": "git",
+    "url": "http://git.envisioncn.com/FE/mobile-plugin-hybrid-init.git"
+  },
+  "version": "0.0.10"
+}

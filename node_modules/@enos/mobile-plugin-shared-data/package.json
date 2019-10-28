@@ -1,0 +1,50 @@
+{
+  "_from": "@enos/mobile-plugin-shared-data",
+  "_id": "@enos/mobile-plugin-shared-data@0.0.7",
+  "_inBundle": false,
+  "_integrity": "sha1-T7uHDjz8a2SG9sE0r93nxXcQp+4=",
+  "_location": "/@enos/mobile-plugin-shared-data",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@enos/mobile-plugin-shared-data",
+    "name": "@enos/mobile-plugin-shared-data",
+    "escapedName": "@enos%2fmobile-plugin-shared-data",
+    "scope": "@enos",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://npm.envisioncn.com:7001/@enos/mobile-plugin-shared-data/download/@enos/mobile-plugin-shared-data-0.0.7.tgz",
+  "_shasum": "4fbb870e3cfc6b6486f6c134afdde7c57710a7ee",
+  "_spec": "@enos/mobile-plugin-shared-data",
+  "_where": "/Users/syl/Desktop/Hybride/2019-6-25",
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "mobile-plugin-shared-data",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "提供在H5页面中储存数据到原生端或者从原生端获取数据。",
+  "keywords": [
+    "cordova",
+    "shared-data",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "Apache 2.0",
+  "name": "@enos/mobile-plugin-shared-data",
+  "repository": {
+    "type": "git",
+    "url": "http://git.envisioncn.com/FE/mobile-plugin-shareddata.git"
+  },
+  "version": "0.0.7"
+}

@@ -1,0 +1,82 @@
+{
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "mobile-plugin-project-init": {
+    "source": {
+      "type": "local",
+      "path": "/Users/syl/Desktop/Hybride/2019-6-25/node_modules/@enos/mobile-plugin-project-init"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "mobile-plugin-hybrid-lib": {
+    "source": {
+      "type": "registry",
+      "id": "@enos/mobile-plugin-hybrid-lib@0.0.4"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "mobile-plugin-hybrid-init": {
+    "source": {
+      "type": "registry",
+      "id": "@enos/mobile-plugin-hybrid-init@0.0.10"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "mobile-plugin-shared-data": {
+    "source": {
+      "type": "registry",
+      "id": "@enos/mobile-plugin-shared-data@0.0.7"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "mobile-plugin-navigation-bar": {
+    "source": {
+      "type": "registry",
+      "id": "@enos/mobile-plugin-navigation-bar@0.0.5"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "mobile-plugin-log": {
+    "source": {
+      "type": "registry",
+      "id": "@enos/mobile-plugin-log@0.0.4"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "mobile-plugin-shellrouter": {
+    "source": {
+      "type": "registry",
+      "id": "@enos/mobile-plugin-shellrouter@0.0.6"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "mobile-plugin-envcontext": {
+    "source": {
+      "type": "registry",
+      "id": "@enos/mobile-plugin-envcontext@0.0.4"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "mobile-plugin-web-container": {
+    "source": {
+      "type": "registry",
+      "id": "@enos/mobile-plugin-web-container@0.0.33"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

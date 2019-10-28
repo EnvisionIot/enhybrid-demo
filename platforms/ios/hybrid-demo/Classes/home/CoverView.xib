@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CoverView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6iZ-XR-rdg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="VRE-Gh-N3G"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="ucN-RM-CSt">
+                    <rect key="frame" x="25" y="74" width="127" height="212"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ucN-RM-CSt" secondAttribute="height" multiplier="126.5:211" id="GRo-6z-xRO"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand" translatesAutoresizingMaskIntoConstraints="NO" id="TxI-Ro-ERZ">
+                    <rect key="frame" x="158" y="294" width="60" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="TxI-Ro-ERZ" secondAttribute="height" multiplier="60:53" id="b1J-T7-DWi"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击左上角菜单按钮切换应用" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSS-Kh-tjg">
+                    <rect key="frame" x="37" y="367" width="300" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="PDi-4p-O4P"/>
+                        <constraint firstAttribute="width" constant="300" id="eBa-5K-Jdb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yij-3C-CLz">
+                    <rect key="frame" x="87" y="417" width="200" height="44"/>
+                    <color key="backgroundColor" red="0.40784313725490196" green="0.41960784313725491" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="Ya5-C4-hwX"/>
+                        <constraint firstAttribute="height" constant="44" id="mdO-WK-ejv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="我知道了">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.066666666666666666" green="0.086274509803921567" blue="0.14117647058823529" alpha="0.0" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="TxI-Ro-ERZ" firstAttribute="top" secondItem="6iZ-XR-rdg" secondAttribute="bottom" constant="230" id="31t-pu-Dpi"/>
+                <constraint firstItem="yij-3C-CLz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3Kt-9N-Yll"/>
+                <constraint firstItem="ucN-RM-CSt" firstAttribute="top" secondItem="6iZ-XR-rdg" secondAttribute="bottom" constant="10" id="4tT-9T-Cvo"/>
+                <constraint firstItem="6iZ-XR-rdg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DKk-zo-TAg"/>
+                <constraint firstItem="TxI-Ro-ERZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Okj-6r-Hxc"/>
+                <constraint firstItem="6iZ-XR-rdg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Qu4-uM-rCM"/>
+                <constraint firstItem="fSS-Kh-tjg" firstAttribute="top" secondItem="TxI-Ro-ERZ" secondAttribute="bottom" constant="20" id="V2d-pI-7OK"/>
+                <constraint firstItem="ucN-RM-CSt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="V7l-Vy-oRw"/>
+                <constraint firstItem="yij-3C-CLz" firstAttribute="top" secondItem="fSS-Kh-tjg" secondAttribute="bottom" constant="20" id="WdT-F0-IJS"/>
+                <constraint firstAttribute="trailing" secondItem="6iZ-XR-rdg" secondAttribute="trailing" id="eay-bA-MCq"/>
+                <constraint firstItem="fSS-Kh-tjg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="goJ-NM-AR9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="knowBtn" destination="yij-3C-CLz" id="bjd-y9-k4D"/>
+                <outlet property="notice_label" destination="fSS-Kh-tjg" id="pT8-eN-kzF"/>
+            </connections>
+            <point key="canvasLocation" x="-228.5" y="419.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow" width="127" height="212"/>
+        <image name="hand" width="60" height="53"/>
+    </resources>
+</document>

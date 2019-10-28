@@ -1,0 +1,29 @@
+# include cordova/node_modules
+/webapp/node_modules
+/webapp/*/node_modules
+.gradle
+.idea
+*.iml
+# Non-project-specific build files:
+build.xml
+local.properties
+gradlew
+gradlew.bat
+gradle
+# Ant builds
+ant-build
+ant-gen
+# Eclipse builds
+gen
+out
+# Gradle builds
+build
+*.mode1v3
+*.perspectivev3
+*.pbxuser
+.DS_Store
+xcuserdata
+platforms/ios/webapp
+platforms/android/app/src/main/assets/webapp
+.history
+hooks

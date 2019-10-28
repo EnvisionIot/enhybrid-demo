@@ -1,0 +1,133 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/widget": [
+            {
+              "xml": "<feature name=\"EnvContext\"><param name=\"ios-package\" value=\"EnvContextPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            }
+          ],
+          "/*": [
+            {
+              "xml": "<feature name=\"LoggingPlugin\"><param name=\"ios-package\" value=\"LoggingPlugin\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"NaviBarPlugin\"><param name=\"ios-package\" value=\"NaviBarPlugin\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"SharedDataPlugin\"><param name=\"ios-package\" value=\"SharedDataPlugin\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"ShellRouterPlugin\"><param name=\"ios-package\" value=\"ShellRouterPlugin\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "*-Info.plist": {
+        "parents": {
+          "UIAppFonts": [
+            {
+              "xml": "<array><string /></array>",
+              "count": 1
+            }
+          ],
+          "EnvDefaultContainer": [
+            {
+              "xml": "<string>EnvWebViewController</string>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "mobile-plugin-envcontext": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "mobile-plugin-hybrid-init": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "mobile-plugin-hybrid-lib": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "mobile-plugin-log": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "mobile-plugin-navigation-bar": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "mobile-plugin-project-init": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "mobile-plugin-shared-data": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "mobile-plugin-shellrouter": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "mobile-plugin-web-container": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "mobile-plugin-log.LoggingPlugin",
+      "file": "plugins/mobile-plugin-log/www/LoggingPlugin.js",
+      "pluginId": "mobile-plugin-log",
+      "clobbers": [
+        "window.plugins.LoggingPlugin"
+      ]
+    },
+    {
+      "id": "mobile-plugin-navigation-bar.NaviBarPlugin",
+      "file": "plugins/mobile-plugin-navigation-bar/www/NaviBarPlugin.js",
+      "pluginId": "mobile-plugin-navigation-bar",
+      "clobbers": [
+        "window.plugins.NaviBarPlugin"
+      ]
+    },
+    {
+      "id": "mobile-plugin-shared-data.SharedDataPlugin",
+      "file": "plugins/mobile-plugin-shared-data/www/SharedDataPlugin.js",
+      "pluginId": "mobile-plugin-shared-data",
+      "clobbers": [
+        "window.plugins.SharedDataPlugin"
+      ]
+    },
+    {
+      "id": "mobile-plugin-shellrouter.ShellRouterPlugin",
+      "file": "plugins/mobile-plugin-shellrouter/www/ShellRouterPlugin.js",
+      "pluginId": "mobile-plugin-shellrouter",
+      "clobbers": [
+        "window.plugins.ShellRouterPlugin"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-whitelist": "1.3.3",
+    "mobile-plugin-envcontext": "0.0.4",
+    "mobile-plugin-hybrid-init": "0.0.10",
+    "mobile-plugin-hybrid-lib": "0.0.4",
+    "mobile-plugin-log": "0.0.4",
+    "mobile-plugin-navigation-bar": "0.0.5",
+    "mobile-plugin-project-init": "1.0.0",
+    "mobile-plugin-shared-data": "0.0.7",
+    "mobile-plugin-shellrouter": "0.0.6",
+    "mobile-plugin-web-container": "0.0.33"
+  }
+}

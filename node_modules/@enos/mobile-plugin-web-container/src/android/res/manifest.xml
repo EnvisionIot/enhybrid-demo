@@ -1,0 +1,10 @@
+
+<root>
+    <children>
+        <activity android:name="com.envisioncn.cordova.webContainer.EnvWebViewActivity" 
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:launchMode="standard"
+            android:theme="@style/EnvWebContainerDefaultStyle" />
+    </children>
+</root>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.envision.demo" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>hybrid-demo</name>
+    <description>
+        这是一个能够创建手机端混合应用的模版。
+    </description>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="DisallowOverscroll" value="true" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <preference name="ShowTitle" value="true" />
+        <preference name="BackgroundColor" value="0x00000000" />
+        <preference name="Orientation" value="portrait" />
+        <preference name="HideKeyboardFormAccessoryBar" value="true" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="mobile-plugin-project-init" spec="./preset_plugins/mobile-plugin-project-init" />
+    <plugin name="@enos/mobile-plugin-hybrid-lib" />
+    <plugin name="@enos/mobile-plugin-hybrid-init" />
+    <plugin name="@enos/mobile-plugin-shared-data" />
+    <plugin name="@enos/mobile-plugin-navigation-bar" />
+    <plugin name="@enos/mobile-plugin-log" />
+    <plugin name="@enos/mobile-plugin-shellrouter" />
+    <plugin name="@enos/mobile-plugin-envcontext" />
+    <plugin name="@enos/mobile-plugin-web-container" />
+    <plugin name="mobile-plugin-web-container" spec="@enos/mobile-plugin-web-container@~0.0.33" />
+</widget>

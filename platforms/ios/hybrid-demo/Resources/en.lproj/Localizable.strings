@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  hybrid-demo
+
+  Created by syl on 2019/7/18.
+  
+*/
+
+"TITLE_HOME" = "Home";
+"TITLE_SHARED_DATA" = "Share Data";
+"msg_username_or_password_empty" = "Username or password is empty";
+"account" = "Account";
+"account_plceholder" = "Enter your username";
+"password" = "Password";
+"password_plceholder" = "Enter your password";
+"user_environment_select" = "Select an environment";
+"authentication_select" = "Select authorization type";
+"user_environment" = "Environment";
+"env_ch" = "China";
+"authentication" = "Auth";
+"default" = "Default";
+"cancel" = "Cancel";
+"login" = "LOG IN";
+"OK" = "OK";

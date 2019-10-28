@@ -1,0 +1,12 @@
+{
+    "declarations": {},
+    "sources": {},
+    "libraries": {
+        "EnvHybrid": {
+            "name": "EnvHybrid",
+            "git": "http://git.envisioncn.com/FE/mobile-framework-hybrid-ios.git",
+            "branch": "dev",
+            "count": 1
+        }
+    }
+}

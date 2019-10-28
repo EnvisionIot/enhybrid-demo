@@ -1,0 +1,50 @@
+{
+  "_from": "@enos/mobile-plugin-navigation-bar",
+  "_id": "@enos/mobile-plugin-navigation-bar@0.0.5",
+  "_inBundle": false,
+  "_integrity": "sha1-kaNpQjk0CJdsG7PqmcBXOKKRPF0=",
+  "_location": "/@enos/mobile-plugin-navigation-bar",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@enos/mobile-plugin-navigation-bar",
+    "name": "@enos/mobile-plugin-navigation-bar",
+    "escapedName": "@enos%2fmobile-plugin-navigation-bar",
+    "scope": "@enos",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://npm.envisioncn.com:7001/@enos/mobile-plugin-navigation-bar/download/@enos/mobile-plugin-navigation-bar-0.0.5.tgz",
+  "_shasum": "91a36942393408976c1bb3ea99c05738a2913c5d",
+  "_spec": "@enos/mobile-plugin-navigation-bar",
+  "_where": "/Users/syl/Desktop/Hybride/2019-6-25",
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "mobile-plugin-navigation-bar",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "为移动端混合框架提供了操作原生导航栏的常用方法。",
+  "keywords": [
+    "cordova",
+    "naviBar",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "Apache 2.0",
+  "name": "@enos/mobile-plugin-navigation-bar",
+  "repository": {
+    "type": "git",
+    "url": "http://git.envisioncn.com/FE/mobile-plugin-navibar.git"
+  },
+  "version": "0.0.5"
+}

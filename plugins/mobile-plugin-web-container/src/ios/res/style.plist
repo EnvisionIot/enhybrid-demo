@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WebViewBackgroundColor</key>
+	<string>#FFFFFF</string>
+	<key>FontName</key>
+	<string>Helvetica</string>
+	<key>NavigationBarStyle</key>
+	<dict>
+		<key>BackgroundColors</key>
+		<array>
+			<string>#FFFFFF</string>
+		</array>
+		<key>Gradient</key>
+		<integer>0</integer>
+		<key>TitleColor</key>
+		<string>#222A42</string>
+		<key>TitleSize</key>
+		<integer>18</integer>
+		<key>IconColor</key>
+		<string>#222A42</string>
+		<key>IconSize</key>
+		<integer>18</integer>
+	</dict>
+	<key>TabBarStyle</key>
+	<dict>
+		<key>BackgroundColor</key>
+		<string>#F3F3F3</string>
+		<key>ItemColor</key>
+		<string>#A9A9A9</string>
+		<key>ItemSelectedColor</key>
+		<string>#3333FF</string>
+		<key>IconSize</key>
+		<integer>20</integer>
+		<key>TitleSize</key>
+		<integer>12</integer>
+	</dict>
+</dict>
+</plist>

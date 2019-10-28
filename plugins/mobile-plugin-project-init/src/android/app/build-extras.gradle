@@ -1,0 +1,21 @@
+//TODO 添加server、appKey、upgradeServer
+ext {
+    versionCode = 1
+    versionName = "1.0.0"
+    cdvBuildMultipleApks = false
+    cdvMinSdkVersion = project.ext.defaultMinSdkVersion
+    buildVariants = [
+            dev : [
+                versionCode: versionCode,
+                versionName: versionName,
+                manifestPlaceholders : [ EnvAppKey:"", EnvUpgradeServer:""],
+                applicationId: privateHelpers.extractStringFromManifest("package") + ".dev"
+            ],
+            production : [
+                versionCode: versionCode,
+                versionName: versionName,
+                manifestPlaceholders : [ EnvAppKey:"", EnvUpgradeServer:""],
+                applicationId: privateHelpers.extractStringFromManifest("package")
+            ]
+    ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@enos/mobile-plugin-project-init",
+  "version": "1.0.0",
+  "description": "mobile plugin for project init",
+  "cordova": {
+    "id": "mobile-plugin-project-init",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {},
+  "keywords": [
+    "cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "Apache 2.0",
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "path": "^0.12.7",
+    "shelljs": "^0.8.3",
+    "xcode": "^2.0.0"
+  }
+}

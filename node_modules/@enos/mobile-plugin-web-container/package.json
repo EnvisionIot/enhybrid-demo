@@ -1,0 +1,62 @@
+{
+  "_from": "@enos/mobile-plugin-web-container@0.0.33",
+  "_id": "@enos/mobile-plugin-web-container@0.0.33",
+  "_inBundle": false,
+  "_integrity": "sha1-XiIFF5FeLaPcaQ2KrgChhzRk8sM=",
+  "_location": "/@enos/mobile-plugin-web-container",
+  "_phantomChildren": {
+    "glob": "7.1.4",
+    "graceful-fs": "4.1.15",
+    "interpret": "1.2.0",
+    "jsonfile": "4.0.0",
+    "rechoir": "0.6.2",
+    "universalify": "0.1.2"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@enos/mobile-plugin-web-container@0.0.33",
+    "name": "@enos/mobile-plugin-web-container",
+    "escapedName": "@enos%2fmobile-plugin-web-container",
+    "scope": "@enos",
+    "rawSpec": "0.0.33",
+    "saveSpec": null,
+    "fetchSpec": "0.0.33"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://npm.envisioncn.com:7001/@enos/mobile-plugin-web-container/download/@enos/mobile-plugin-web-container-0.0.33.tgz",
+  "_shasum": "5e220517915e2da3dc690d8aae00a1873464f2c3",
+  "_spec": "@enos/mobile-plugin-web-container@0.0.33",
+  "_where": "/Users/syl/Documents/Git/mobile-framework-hybrid-template-app-portal",
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "mobile-plugin-web-container",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "path": "^0.12.7",
+    "shelljs": "^0.8.3"
+  },
+  "deprecated": false,
+  "description": "为移动端混合框架提供一个原生Web容器。",
+  "keywords": [
+    "cordova",
+    "container",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "Apache 2.0",
+  "name": "@enos/mobile-plugin-web-container",
+  "repository": {
+    "type": "git",
+    "url": "http://git.envisioncn.com/FE/mobile-plugin-web-container.git"
+  },
+  "version": "0.0.33"
+}

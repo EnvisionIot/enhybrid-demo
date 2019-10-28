@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    id="mobile-plugin-web-container"
+    version="0.0.33">
+    <name>Web Container</name>
+    <description>为移动端混合框架提供一个原生Web容器。</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,container</keywords>
+    <repo></repo>
+    <issue></issue>
+
+    <!-- android -->
+    <platform name="android">
+        <hook type="before_plugin_install" src="hook/android/scripts/beforePluginInstall.js" />
+        <config-file target="app/src/main/res/values/attrs.xml" parent="/resources">
+            <!-- IconView自定义属性 -->
+            <declare-styleable name="EnvIconView">
+                <attr name="iconttf" format="string" />
+            </declare-styleable>
+            <attr name="envNaviBgColor" format="reference" />
+            <!-- 导航栏icon颜色 -->
+            <attr name="envNaviIconColor" format="reference" />
+            <!-- 导航栏icon尺寸 -->
+            <attr name="envNaviIconSize" format="reference" />
+            <!-- 导航栏标题的颜色 -->
+            <attr name="envNaviTitleTextColor" format="reference" />
+            <!-- 导航栏title文字尺寸 -->
+            <attr name="envNaviTitleTextSize" format="reference" />
+            <!-- 导航栏iconfont路径 -->
+            <attr name="envFontIconPath" format="string" />
+        </config-file>
+
+        <config-file target="app/src/main/res/values/colors.xml" parent="/resources">
+            <!-- 导航栏背景颜色 -->
+            <color name="env_navi_bg_color">#282C34</color>
+
+            <!-- 导航栏标题的颜色 -->
+            <color name="env_navi_title_text_color">#ffffff</color>
+
+            <!-- 导航栏左上角icon的颜色 -->
+            <color name="env_navi_icon_color">#ffffff</color>
+
+            <!-- 导航栏角标的颜色 -->
+            <color name="env_navi_corner_color">#FD5D51</color>
+
+            <!-- 导航栏角标文字的颜色 -->
+            <color name="env_navi_corner_text_color">#ffffff</color>
+        </config-file>
+
+        <config-file target="app/src/main/res/values/dimens.xml" parent="/resources">
+            <!-- 导航栏icon的尺寸 -->
+            <dimen name="env_navi_icon_size">19sp</dimen>
+            <!-- 导航栏标题文字的尺寸 -->
+            <dimen name="env_navi_title_text_size">20sp</dimen>
+        </config-file>
+
+        <config-file target="app/src/main/res/values/strings.xml" parent="/resources">
+            <string name="env_font_icon_path"></string>
+        </config-file>
+
+        <config-file target="app/src/main/res/values/styles.xml" parent="/resources">
+            <style name="EnvWebContainerDefaultStyle" parent="Theme.AppCompat.Light.NoActionBar">
+                <!-- 导航栏背景颜色 -->
+                <item name="envNaviBgColor">@color/env_navi_bg_color</item>
+                <!-- 导航栏icon的尺寸 -->
+                <item name="envNaviIconSize">@dimen/env_navi_icon_size</item>
+                <!-- 导航栏icon的颜色 -->
+                <item name="envNaviIconColor">@color/env_navi_icon_color</item>
+                <!-- 导航栏标题文字的颜色 -->
+                <item name="envNaviTitleTextColor">@color/env_navi_title_text_color</item>
+                <!-- 导航栏标题文字的尺寸 -->
+                <item name="envNaviTitleTextSize">@dimen/env_navi_title_text_size</item>
+                <!-- 指定导航栏中iconFont字体的路径 -->
+                <item name="envFontIconPath">@string/env_font_icon_path</item>
+            </style>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity android:name="com.envisioncn.cordova.webContainer.EnvWebViewActivity" 
+                      android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+                      android:screenOrientation="portrait"
+                      android:launchMode="standard"
+                      android:theme="@style/EnvWebContainerDefaultStyle" />
+        </config-file>
+
+        <edit-config file="AndroidManifest.xml" target="/manifest/application/meta-data[@android:name='ENV_DEFAULT_CONTAINER']" mode="overwrite">
+            <meta-data
+                android:name="ENV_DEFAULT_CONTAINER"
+                android:value="com.envisioncn.cordova.webContainer.EnvWebViewActivity" />
+        </edit-config>
+
+        <resource-file src="src/android/res/layout/env_activity_main.xml" target="res/layout/env_activity_main.xml" />
+        <resource-file src="src/android/res/layout/env_toolbar_navigation.xml" target="res/layout/env_toolbar_navigation.xml" />
+        
+        <source-file src="src/android/com/envisioncn/cordova/webContainer/BadgeUtil.java" target-dir="src/com/envisioncn/cordova/webContainer" />
+        <source-file src="src/android/com/envisioncn/cordova/webContainer/CordovaComponentPresenter.java" target-dir="src/com/envisioncn/cordova/webContainer" />
+        <source-file src="src/android/com/envisioncn/cordova/webContainer/CordovaComponentPresenterImpl.java" target-dir="src/com/envisioncn/cordova/webContainer" />
+        <source-file src="src/android/com/envisioncn/cordova/webContainer/CordovaComponentView.java" target-dir="src/com/envisioncn/cordova/webContainer" />
+        <source-file src="src/android/com/envisioncn/cordova/webContainer/DensityUtil.java" target-dir="src/com/envisioncn/cordova/webContainer" />
+        <source-file src="src/android/com/envisioncn/cordova/webContainer/EnvBaseWebViewActivity.java" target-dir="src/com/envisioncn/cordova/webContainer" />
+        <source-file src="src/android/com/envisioncn/cordova/webContainer/EnvIconView.java" target-dir="src/com/envisioncn/cordova/webContainer" />
+        <source-file src="src/android/com/envisioncn/cordova/webContainer/EnvStyleUtil.java" target-dir="src/com/envisioncn/cordova/webContainer" />
+        <source-file src="src/android/com/envisioncn/cordova/webContainer/EnvWebContainerConstants.java" target-dir="src/com/envisioncn/cordova/webContainer" />
+        <source-file src="src/android/com/envisioncn/cordova/webContainer/EnvCordovaFragment.java" target-dir="src/com/envisioncn/cordova/webContainer" />
+        <source-file src="src/android/com/envisioncn/cordova/webContainer/EnvWebViewActivity.java" target-dir="src/com/envisioncn/cordova/webContainer" />
+        <source-file src="src/android/com/envisioncn/cordova/webContainer/EnvWebViewFragment.java" target-dir="src/com/envisioncn/cordova/webContainer" />
+        <source-file src="src/android/com/envisioncn/cordova/webContainer/FragmentCordovaInterfaceImpl.java" target-dir="src/com/envisioncn/cordova/webContainer" />
+        <source-file src="src/android/com/envisioncn/cordova/webContainer/CookieSyncUtils.java" target-dir="src/com/envisioncn/cordova/webContainer" />
+
+        <lib-file src="src/android/lib/android-viewbadger.jar" />
+     </platform>
+
+     <!-- ios -->
+     <platform name="ios">
+         <!-- <header-file src="src/ios/" />
+         <source-file src="src/ios/" /> -->
+
+         <source-file src="src/ios/class/EnvIconFont.h" />
+         <source-file src="src/ios/class/EnvIconFont.m" />
+         <source-file src="src/ios/class/EnvStyleParser.h" />
+         <source-file src="src/ios/class/EnvStyleParser.m" />
+         <source-file src="src/ios/class/EnvWebViewController.h" />
+         <source-file src="src/ios/class/EnvWebViewController.m" />
+         <source-file src="src/ios/class/EnvWebViewControllerProtocol.h" />
+         <source-file src="src/ios/class/UIColor+Hex.h" />
+         <source-file src="src/ios/class/UIColor+Hex.m" />
+         <source-file src="src/ios/class/UIImage+EnvHybrid.h" />
+         <source-file src="src/ios/class/UIImage+EnvHybrid.m" />
+         <source-file src="src/ios/class/UINavigationController+EnvHybrid.m" />
+         <source-file src="src/ios/class/WildcardGestureRecognizer.h" />
+         <source-file src="src/ios/class/WildcardGestureRecognizer.m" />
+
+         <resource-file src="src/ios/res/style.plist"/>
+
+         <config-file target="*-Info.plist" parent="UIAppFonts">
+            <array>
+                <string></string>
+            </array>
+         </config-file>
+         <config-file target="*-Info.plist" parent="EnvDefaultContainer">
+            <string>EnvWebViewController</string>
+         </config-file>
+     </platform>
+</plugin>

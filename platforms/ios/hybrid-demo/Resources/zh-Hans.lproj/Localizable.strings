@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  hybrid-demo
+
+  Created by syl on 2019/7/18.
+  
+*/
+
+"TITLE_HOME" = "首页";
+"TITLE_SHARED_DATA" = "数据持久化";
+"msg_username_or_password_empty" = "用户名或密码为空";
+"account" = "用户账号";
+"account_plceholder" = "请输入您的用户名";
+"password" = "登录密码";
+"password_plceholder" = "请输入密码";
+"user_environment_select" = "用户环境选择";
+"authentication_select" = "认证方式选择";
+"user_environment" = "用户环境";
+"env_ch" = "中国";
+"authentication" = "认证方式";
+"default" = "默认";
+"cancel" = "取消";
+"login" = "立即登录";
+"OK" = "确定";

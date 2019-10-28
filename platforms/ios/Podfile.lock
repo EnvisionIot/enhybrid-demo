@@ -1,0 +1,51 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - CCLogSystem (1.0.1)
+  - EnvHybrid (2.0.1):
+    - AFNetworking (~> 3.0)
+    - CCLogSystem (~> 1.0.1)
+    - SSZipArchive (~> 2.1.1)
+  - SSZipArchive (2.1.4)
+
+DEPENDENCIES:
+  - EnvHybrid (from `http://git.envisioncn.com/FE/mobile-framework-hybrid-ios.git`, branch `dev`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - CCLogSystem
+    - SSZipArchive
+
+EXTERNAL SOURCES:
+  EnvHybrid:
+    :branch: dev
+    :git: http://git.envisioncn.com/FE/mobile-framework-hybrid-ios.git
+
+CHECKOUT OPTIONS:
+  EnvHybrid:
+    :commit: c10088a6d7e77190b52aa5816d9700f8fcc8adbe
+    :git: http://git.envisioncn.com/FE/mobile-framework-hybrid-ios.git
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CCLogSystem: 841a462314c211c561fd846b08fea718e78a567b
+  EnvHybrid: ccc78f069ed4593305225fd1457c31507c120396
+  SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
+
+PODFILE CHECKSUM: b2d38ea2dd007eb55c36451f31072ed0bab847a2
+
+COCOAPODS: 1.5.0

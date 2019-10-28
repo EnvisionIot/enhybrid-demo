@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tx_menu_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFA0A4AD"
+        android:textSize="14sp"
+        android:layout_marginLeft="25dip"
+        android:layout_marginTop="30dip"
+        android:layout_marginBottom="20dip"/>
+
+</LinearLayout>
