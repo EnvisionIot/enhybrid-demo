@@ -1,14 +1,14 @@
-# Envhybrid Demo
+# Mobile Application Framework Demo
 
-This demo is developed based on EnvHybrid mobile application framework. It integrates the EnOS Application Portal login function and demonstrates page redirection and data persistence functions. By using EnvHybrid, you can develop mobile applications with mainstream front-end technologies including JavaScript, CSS, and HTML.
+This demo is developed based on the mobile application framework. It integrates the EnOS Application Portal login function and demonstrates page redirection and data persistence functions. By using this framework, you can develop mobile applications with mainstream front-end technologies including JavaScript, CSS, and HTML.
 
 
-EnvHybrid encapsulates the interaction between the native development system and JavaScript, and the parsing and redirection functions of the route. You can use the API provided by EnvHybrid for development. The native navigation bar provided by EnvHybrid enhances the user experience. Meanwhile, the EnvHybrid can open local and online H5 pages without specific front-end technologies or code languages.
+The mobile application framework encapsulates the interaction between the native development system and JavaScript, and the parsing and redirection functions of the route. You can use the API provided by the framework for development. The native navigation bar provided by the framework enhances the user experience. Meanwhile, the framework can open local and online H5 pages without specific front-end technologies or code languages.
 
 
 ## System Requirements
 
-Envhybrid supports iOS and Android systems:
+The framework supports iOS and Android systems:
 
 - iOS: Xcode 10.0 or later
 
@@ -149,7 +149,7 @@ if (device.isMobile) {
 
 ### Basic Plugins
 
-The demo contains the following basic plugins. For all the basic plugins included in EnvHybrid, refer to [EnvHybrid Mobile Application Framework Overview](https://www.envisioniot.com/docs/app-development/en/latest/envhybrid/overview.html).
+The demo contains the following basic plugins. For all the basic plugins included in this framework, refer to [About Mobile Application Framework](https://support-cn5.envisioniot.com/docs/app-development/en/latest/mobile_application_framework/overview.html).
 
 
 |             Plugin        |       Description     |
@@ -162,7 +162,7 @@ The demo contains the following basic plugins. For all the basic plugins include
 
 ### Extended Functions
 
-Besides the above plugins, EnvHybrid also provides plugins that support specific features, which will be available soon.
+Besides the above plugins, the framework also provides plugins that support specific features, which will be available soon.
 
 |             Plugin        |       Description     |
 |---------------------------|----------------|
